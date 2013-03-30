@@ -1,0 +1,50 @@
+.treeview ul{ /*CSS for Simple Tree Menu*/
+margin-left: 0;
+color: #444;
+padding:0px;
+}
+
+.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+background: url(../images/square.gif) no-repeat left top;
+list-style-type: none;
+padding-left: 20px;
+margin-bottom: 5px;
+margin-left: 15px;
+color: #444;
+min-height:12px;
+line-height: 12px;
+}
+
+.treeview a {
+color: #444;
+}
+.treeview  a:hover {
+color: #ff0000;
+}
+
+.treeview li.submenu{ /* Style for LI that contains sub lists (other ULs). */
+background: url(../images/plusicon.jpg) no-repeat left top;
+cursor: pointer !important;
+color: #444;
+}
+
+
+.treeview li.submenu ul{ /*Style for ULs that are children of LIs (submenu) */
+display: none; /*Hide them by default. Don't delete. */
+padding-top:5px;
+}
+
+.treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
+cursor: default;
+color: #444;
+margin-left: 0px;
+min-height:12px;
+line-height: 12px;
+}
+
+.treeview .submenu ul li a {
+color: #444;
+}
+.treeview .submenu ul li a:hover {
+color: #ff0000;
+}
